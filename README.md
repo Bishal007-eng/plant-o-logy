@@ -33,7 +33,6 @@ A functional e-commerce website for an online plant shop, built with PHP, MySQL,
 - Email: `admin@plantology.com`
 - Password: `admin123`
 
-*(Change these in production.)*
 
 ## Structure
 plantshop/
@@ -50,7 +49,5 @@ plantshop/
 ├── images/ Plant photography
 └── sql/ Database schema
 
-
-## License
-
+##Coursework
 Personal project — MIT507 Web Design and Development coursework.
