@@ -1,0 +1,16 @@
+# Editor
+.vscode/
+.idea/
+*.sublime-*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local only
+_setup.php
+test.php
+test2.php
