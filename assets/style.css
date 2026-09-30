@@ -1,0 +1,54 @@
+/* ============================================================
+   Plant-o-logy — Custom CSS
+   Only for things the Tailwind CDN can't do.
+   ============================================================ */
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes popIn {
+    from { transform: translate(-50%, -50%) scale(0.95); opacity: 0; }
+    to   { transform: translate(-50%, -50%) scale(1);    opacity: 1; }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.2s ease;
+}
+
+.animate-popIn {
+    animation: popIn 0.2s ease;
+    /* Override the translate utilities on this element to make the animation smooth */
+    transform: translate(-50%, -50%);
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+/* Toast (JS-generated element) */
+.Toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    padding: 12px 22px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 300;
+}
+
+.ToastShow {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.ToastSuccess { background: #047857; }
+.ToastError   { background: #dc2626; }
